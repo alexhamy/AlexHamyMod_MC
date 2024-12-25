@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "alexhamymod",
+  "version": "${version}",
+  "name": "AlexHamyMod",
+  "description": "First mod. Does funny",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/alexhamymod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.alexhamy.alexhamymod.ModDataGenerator"
+    ],
+    "client": [
+      "me.alexhamy.alexhamymod.client.AlexhamymodClient"
+    ],
+    "main": [
+      "me.alexhamy.alexhamymod.Alexhamymod"
+    ]
+  },
+  "mixins": [
+    "alexhamymod.mixins.json",
+    {
+      "config": "alexhamymod.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
