@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "alexhamymod:phosphophyllite",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    " R ",
+    " R ",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "alexhamymod:sword_phosphophyllite"
+  }
+}
